@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #04225c" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.coursereviewjsm8stnjr4ssnjx7sq.LoginController">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="304.0" fitWidth="328.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@rev_uva_logo_color3.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="262.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="14.0" layoutY="136.0" prefHeight="33.0" prefWidth="62.0" text="Username" textFill="WHITE" />
+            <Label layoutX="13.0" layoutY="169.0" prefHeight="32.0" prefWidth="65.0" text="Password" textFill="WHITE" />
+            <TextField fx:id="username" layoutX="87.0" layoutY="140.0" promptText="Username" />
+            <PasswordField fx:id="password" layoutX="87.0" layoutY="173.0" promptText="Password" />
+            <Button fx:id="loginButton" layoutX="98.0" layoutY="230.0" mnemonicParsing="false" onAction="#userLogin" prefHeight="34.0" prefWidth="66.0" text="Login" />
+            <Label fx:id="loginMessageLabel" layoutX="16.0" layoutY="82.0" text="Welcome to the UVA course review system!" textFill="WHITE" />
+            <Button fx:id="newUser" layoutX="79.0" layoutY="273.0" mnemonicParsing="false" text="Create New User" onAction="#addUserButton"/>
+            <Label fx:id="confirmPassLabel" layoutX="-2.0" layoutY="312.0" text="Confirm Password" textFill="WHITE" visible="false"/>
+            <PasswordField fx:id="confirmPass" layoutX="109.0" layoutY="308.0" promptText="Confirm Password" visible="false"/>
+            <Button fx:id="addUserLogin" layoutX="81.0" layoutY="340.0" mnemonicParsing="false" text="Login New User" visible="false" onAction="#submitNewUser"/>
+            
+         </children></AnchorPane>
+   </right>
+</BorderPane>
